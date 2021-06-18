@@ -35,10 +35,12 @@ function hotelCost(days){
             var price = days*100;
         }
         else if(10<days && days<=20){
-            var price = days*80;
+            var count = (days - 10);
+            var price = (count*80)+1000;
         }
         else{
-            var price = days*50;
+            var count = (days - 20);
+            var price = (count*50)+1800;
         }
     }
     else{
